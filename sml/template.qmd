@@ -10,7 +10,7 @@ format:
     margin-left: 1in
     margin-right: 1in
     fontsize: 11pts
-    pagestyle: empty
+
 thanks: |
   Thank u for all
 author:
@@ -20,14 +20,15 @@ author:
         - id: levy
           name: Levy Economics Institute of Bard College
           city: Annandale-on-Hudson, NY
-          country: USA           
+          country: USA
+    attributes:
+        corresponding: true           
   - name: Leonardo Siles
     email: leonardo.siles@ucb.edu.bo
     affiliations:
         - id: ucb
           name: Universidad Católica Boliviana
-          city: La Paz
-          country: Bolivia
+          city: La Paz, Bolivia
   - name: Gustavo Canavire-Bacarreza
     email: gcanavire@worldbank.org
     affiliations:
@@ -41,11 +42,11 @@ abstract: |
 keywords: [template, demo]
 reference-section-title: References
 bibliography: bibliography.bib
+
 template-partials: 
   - "templates/title.tex"
-  - "templates/_authors.tex"
   - "templates/before-body.tex"
-  
+  - "templates/_authors.tex"
 ---
 
 ## Introduction {#sec-intro .unnumbered}
