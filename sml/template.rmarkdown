@@ -51,6 +51,7 @@ template-partials:
   - "templates/_authors.tex"
 ---
 
+
 ## Introduction {#sec-intro .unnumbered}
 
 This is a dummy example only for the purpose to use this repo as a template starter for creating new formats.  For this `article-format-template` we call our dummy article `aft`. 
@@ -143,7 +144,10 @@ Other files
 
     **Remove this file and provide a suitable one for your template**
 
+
 {{< pagebreak >}}
+
+
 
 ## Checklist: Creating a custom format
 
@@ -173,19 +177,23 @@ PDF are rendered using latex but it is best if one can use a Markdown syntax for
 
 This format hide chunks by default as option has been set in `_extension.yml` file.
 
+
 ```{r}
 #| prompt: true
 # Loading some data but this chunk won't be shown.
 data("quine", package = "MASS")
 ```
 
+
 But you can set `echo` option to `true` locally in the chunk
+
 
 ```{r}
 #| echo: true
 m_pois <- glm(Days ~ (Eth + Sex + Age + Lrn)^2, data = quine, family = poisson)
 summary(m_pois)
 ```
+
 
 ### Text color {#sec-summary}
 

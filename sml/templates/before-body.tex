@@ -25,8 +25,20 @@ $abstract$
 \end{abstract}
 $endif$
 $endif$
+ 
+\vspace{.2in}
 
-\cortext[cor1]{Corresponding author}
+$if(keywords)$
+\textbf{\textit{Keyword: }}
+    $for(keywords/allbutlast)$$keywords$, $endfor$
+    $for(keywords/last)$$keywords$$endfor$ 
+$endif$
+
+$if(jelcodes)$
+\textbf{\textit{JEL: }}
+    $for(jelcodes/allbutlast)$$jelcodes$, $endfor$
+    $for(jelcodes/last)$$jelcodes$$endfor$ 
+$endif$
 
 \thispagestyle{empty}
 \clearpage\pagenumbering{arabic}
